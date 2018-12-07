@@ -1,0 +1,26 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.cabecera{
+	-fx-background-image: url(view/asset/blueforest.jpg);
+	-fx-background-size: cover, auto;
+}
+
+.footer {
+	-fx-background-color: #75B4BB;
+	
+	}
+	
+.titulo {
+	-fx-font-family: 'Poiret One';
+	-fx-font-size: 30px;
+}
+
+.subtitulo {
+	-fx-font-family: 'Poiret One';
+	-fx-font-size: 15px;
+}
+
+.subtitulocursiva {
+	-fx-font-family: 'Poiret One', cursive;
+	-fx-font-size: 15px;
+}

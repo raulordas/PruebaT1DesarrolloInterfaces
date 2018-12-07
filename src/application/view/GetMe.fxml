@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="ventanaSecundaria" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" stylesheets="@../application.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="application.ControlVentana2">
+   <children>
+      <AnchorPane fx:id="panelMenu" prefHeight="600.0" prefWidth="235.0" style="-fx-background-color: #75B4BB;">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutY="89.0" prefHeight="511.0" prefWidth="235.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="89.0">
+               <children>
+                  <JFXButton fx:id="menuInicio" prefHeight="45.0" prefWidth="234.0" styleClass="titulo" text="INICIO" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="menuServicios" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="234.0" styleClass="titulo" text="SERVICIOS" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="menuReservas" layoutX="10.0" layoutY="61.0" prefHeight="45.0" prefWidth="234.0" styleClass="titulo" text="RESERVAS" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="menuSoy" layoutX="10.0" layoutY="112.0" prefHeight="45.0" prefWidth="234.0" styleClass="titulo" text="QUIEN SOY" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="btnSalir" layoutX="10.0" layoutY="163.0" onMouseClicked="#salir" prefHeight="45.0" prefWidth="234.0" styleClass="titulo" text="SALIR" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <BorderPane prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <AnchorPane prefHeight="357.0" prefWidth="270.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <JFXTextField focusColor="#75b4bb" promptText="Nombre" unFocusColor="#75b4bb">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <JFXTextField focusColor="#75b4bb" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="238.0" promptText="Apellidos" unFocusColor="#75b4bb">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <JFXDatePicker nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="306.0">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </JFXDatePicker>
+                        <JFXTimePicker nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="270.0">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </JFXTimePicker>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <JFXButton fx:id="botonReservar" onMouseEntered="#hover" onMouseExited="#unHover" prefHeight="52.0" prefWidth="115.0" style="-fx-background-color: #75B4BB;" text="RESERVAR" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="217.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="107.0" prefWidth="800.0">
+                           <children>
+                              <JFXHamburger onMouseClicked="#visualizarPanelMenu">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </JFXHamburger>
+                              <Label alignment="TOP_LEFT" styleClass="titulo" text="Formulario De Reservas" textFill="#75b4bb">
+                                 <HBox.margin>
+                                    <Insets left="180.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <ImageView fx:id="btnSalir" fitHeight="29.0" fitWidth="25.0" onMouseClicked="#salir" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@asset/cross.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="200.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <AnchorPane prefHeight="116.0" prefWidth="800.0">
+                           <children>
+                              <ImageView fitHeight="76.0" fitWidth="67.0" layoutX="367.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@asset/book.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="74.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="79.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@asset/socialnetwork.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <left>
+            <AnchorPane prefHeight="332.0" prefWidth="276.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <AnchorPane prefHeight="332.0" prefWidth="254.0" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

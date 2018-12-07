@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="ventanaPrincipal" prefHeight="400.0" prefWidth="500.0" stylesheets="@../application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlFX">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane prefHeight="98.0" prefWidth="500.0" styleClass="cabecera" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label styleClass="titulo" text="My Profile">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ImageView fx:id="imagen" fitHeight="150.0" fitWidth="200.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@asset/profilephoto.png" />
+                     </image>
+                  </ImageView>
+                  <Label styleClass="subtitulo" text="JAY.R" />
+                  <Label styleClass="subtitulocursiva" text="Programmers can design" />
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <AnchorPane prefHeight="97.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="TOP_RIGHT" prefHeight="50.0" prefWidth="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <JFXButton fx:id="botonAceptar" onAction="#sendStage" onMouseEntered="#hover" onMouseExited="#unHover" prefHeight="46.0" prefWidth="92.0" style="-fx-background-color: orange;" text="GET ME" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets right="30.0" />
+                           </VBox.margin>
+                           <tooltip>
+                              <Tooltip text="Click Me" />
+                           </tooltip>
+                        </JFXButton>
+                        <Pane prefHeight="27.0" prefWidth="500.0" />
+                        <Pane prefHeight="46.0" prefWidth="500.0" styleClass="footer" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
